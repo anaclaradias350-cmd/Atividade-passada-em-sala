@@ -1,0 +1,24 @@
+numero = int(input("Digite um número inteiro: "))
+if numero % 2 == 0:
+	print("O número é par.")
+else:
+	print("O número é ímpar.")
+
+print("Múltiplos de 3 entre 1 e 50:")
+for numero in range(1, 51):
+	if numero % 3 == 0:
+		print(numero)
+
+notas = []
+for i in range(4):
+	notas.append(float(input(f"Digite a {i + 1}ª nota: ")))
+
+media = sum(notas) / 4
+print(f"Média: {media:.2f}")
+
+if media >= 7:
+	print("Aluno aprovado.")
+elif media >= 5:
+	print("Aluno em recuperação.")
+else:
+	print("Aluno reprovado.")
